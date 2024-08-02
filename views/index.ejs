@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bitcoin-ticker</title>
+  </head>
+  <body>
+    <form action="/" method="post">
+      <!-- <select name="crypto">
+        <option value="BTC">Bitcoin</option>
+        <option value="ETH">Ethereum</option>
+        <option value="LTC">Litecoin</option>
+      </select> -->
+
+      <input type="text" name="amount" placeholder="Quantity">
+
+      <select name="firstFiat">
+        <option value="USD">US Dollar</option>
+        <option value="GBP">GB Pound</option>
+        <option value="EUR">EU Euro</option>
+      </select>
+
+      <select name="secondFiat">
+        <option value="USD">US Dollar</option>
+        <option value="GBP">GB Pound</option>
+        <option value="EUR">EU Euro</option>
+      </select>
+
+      <button type="submit">Check</button>
+
+      <p style="font-weight: bold"><%= date %></p>
+
+      <%if(amount && first && conversion && second ){%>
+      <h1><%=amount%> <%=first%> is <%=conversion%> <%=second%></h1>
+      <%}%>
+    </form>
+  </body>
+</html>

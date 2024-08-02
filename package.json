@@ -1,0 +1,23 @@
+{
+  "name": "bitcoin-ticker-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "oto",
+    "mazra"
+  ],
+  "author": "oto mazra",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "git": "^0.1.5",
+    "nodemon": "^3.1.4",
+    "request": "^2.88.2"
+  }
+}
